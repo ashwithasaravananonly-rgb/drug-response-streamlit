@@ -36,7 +36,7 @@ data = pd.DataFrame([[
     'BP_NORMAL',
     'Cholesterol_HIGH',
     'Cholesterol_NORMAL'
-])
+])})
 # Encoding (IMPORTANT)
 data['Sex'] = data['Sex'].map({'F':0, 'M':1})
 data['BP'] = data['BP'].map({'LOW':0,'NORMAL':1,'HIGH':2})
