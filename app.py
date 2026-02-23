@@ -16,11 +16,15 @@ na_to_k = st.number_input("Na_to_K")
 
 # Convert to dataframe
 data = pd.DataFrame({
-    "Age": [age],
-    "Sex": [sex],
-    "BP": [bp],
-    "Cholesterol": [chol],
-    "Na_to_K": [na_to_k]
+    'Age':[age],
+    'Na_to_K':[na_to_k],
+    'Sex_M':[1 if sex=="M" else 0],
+    'Sex_F':[1 if sex=="F" else 0],
+    'BP_LOW':[1 if bp=="LOW" else 0],
+    'BP_NORMAL':[1 if bp=="NORMAL" else 0],
+    'BP_HIGH':[1 if bp=="HIGH" else 0],
+    'Cholesterol_NORMAL':[1 if chol=="NORMAL" else 0],
+    'Cholesterol_HIGH':[1 if chol=="HIGH" else 0],
 })
 # Encoding (IMPORTANT)
 data['Sex'] = data['Sex'].map({'F':0, 'M':1})
