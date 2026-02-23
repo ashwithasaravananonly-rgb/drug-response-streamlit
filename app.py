@@ -16,7 +16,7 @@ na_to_k = st.number_input("Na_to_K")
 
 # Convert to dataframe
 data = pd.DataFrame({
-data = pd.DataFrame([{
+data = pd.DataFrame([
     age,
     na_to_k,
     1 if sex=="F" else 0,
@@ -26,7 +26,7 @@ data = pd.DataFrame([{
     1 if bp=="NORMAL" else 0,
     1 if chol=="HIGH" else 0,
     1 if chol=="NORMAL" else 0
-}], columns=[
+], columns=[
     'Age',
     'Na_to_K',
     'Sex_F',
