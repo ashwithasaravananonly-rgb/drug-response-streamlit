@@ -15,7 +15,7 @@ na = st.number_input("Na")
 k = st.number_input("K")
 
 sex = st.selectbox("Sex", ["M", "F"])
-bp = st.selectbox("BP", ["LOW", "NORMAL", "HIGH"]])
+bp = st.selectbox("BP", ["LOW", "NORMAL", "HIGH"])
 chol = st.selectbox("Cholesterol", ["NORMAL", "HIGH"])
 
 if st.button("Predict"):
